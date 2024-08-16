@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Brzozowski - Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .left-pane {
+            width: 30%;
+            background-color: #0056b3;
+            color: #fff;
+            padding: 20px;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            height: 100%;
+            box-sizing: border-box;
+        }
+        .right-pane {
+            margin-left: 30%;
+            width: 70%;
+            padding: 20px;
+            overflow-y: auto;
+            height: 100%;
+            box-sizing: border-box;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #fff;
+            padding-bottom: 5px;
+        }
+        .contact-info {
+            margin-bottom: 20px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .profile-image {
+            width: 100%;
+            height: 200px;
+            background-color: #fff;
+            border: 5px solid #333;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+            color: #333;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #0056b3;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 5px;
+        }
+        .skills-list, .languages-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills-list li, .languages-list li {
+            background: #0056b3;
+            color: #fff;
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="left-pane">
+        <h1>Mark Brzozowski</h1>
+        <div class="profile-image">
+            <p>Image Placeholder</p>
+        </div>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:mark.brzozowski@gmail.com" style="color: #fff;">mark.brzozowski@gmail.com</a></p>
+            <p>Phone: +1 514-827-9982</p>
+            <p>Location: Montreal, QC</p>
+        </div>
+    </div>
+
+    <div class="right-pane">
+        <div class="section">
+            <h2>Professional Summary</h2>
+            <p>Senior Software Quality Assurance Analyst with over 18 years of experience in software testing, team leadership, and framework development. Proficient in multiple programming languages and testing tools, with a proven track record of delivering high-quality software products. Experienced in both manual and automated testing, with a strong background in building and leading QA teams.</p>
+        </div>
+
+        <div class="section">
+            <h2>Professional Experience</h2>
+            <h3>Microsoft</h3>
+            <p><strong>Senior Software Quality Assurance Analyst</strong> | August 2023 – Present</p>
+            <ul>
+                <li>Lead QA efforts on a Voice Biometric Conversation Conductor project, conducting cloud tests using ADO setup.</li>
+                <li>Worked on Nuance Console, a log aggregator, ensuring accurate data collection and system reliability.</li>
+                <li>Built and maintained automated testing frameworks using Playwright Cucumber for UI testing in a pre-production environment.</li>
+                <li>Developed Python scripts for backend data validation, comparing various file formats including Excel, CSV, and PDFs.</li>
+                <li>Acted as a Scrum Master, leading team meetings and ensuring adherence to Agile methodologies.</li>
+            </ul>
+
+            <h3>Nuance Communications</h3>
+            <p><strong>Senior Software Quality Assurance Analyst</strong> | May 2006 – August 2023</p>
+            <ul>
+                <li>Played a key role in the development and testing of SpeechAttendant, an automated receptionist utilizing advanced speech recognition.</li>
+                <li>Contributed to the creation of WebAPI Messenger, enabling bot development for platforms like Facebook, Google Home, and Alexa via REST API.</li>
+                <li>Led QA teams in the development and execution of test plans, ensuring software met stringent quality standards.</li>
+                <li>Built custom testing frameworks from scratch, integrating tools like Cucumber, Playwright, and REST API testing.</li>
+                <li>Acted as a developer for several months, coding in C# and Java to support various projects.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <p><strong>Dawson College</strong></p>
+            <p>Diploma of College Studies (DEC) in Computer Science</p>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>Java</li>
+                <li>C#</li>
+                <li>Python</li>
+                <li>MySQL</li>
+                <li>Docker</li>
+                <li>Kubernetes</li>
+                <li>Playwright</li>
+                <li>Cucumber</li>
+                <li>Bash Scripting</li>
+                <li>JUnit Testing</li>
+                <li>Agile</li>
+                <li>CI/CD</li>
+                <li>REST API</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Languages</h2>
+            <ul class="languages-list">
+                <li>English: Proficient</li>
+                <li>French: Proficient</li>
+                <li>Polish: Conversational</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Volunteer Experience</h2>
+            <p><strong>Big Brothers Big Sisters of Greater Montreal</strong></p>
+            <p>Mentor | October 2019 – Present</p>
+            <p>Mentor a child named Samuel twice a month, providing guidance, support, and positive influence.</p>
+        </div>
+
+        <div class="section">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>SpeechAttendant:</strong> Developed and tested an automated speech recognition system for directing callers in large organizations.</li>
+                <li><strong>WebAPI Messenger:</strong> Contributed to a bot development platform for major products like Facebook, Google Home, and Alexa.</li>
+                <li><strong>Voice Biometric Conversation Conductor:</strong> QA lead on a voice biometric project with extensive cloud testing using ADO.</li>
+                <li><strong>Nuance Console:</strong> Worked on a log aggregator tool, focusing on data accuracy and system reliability.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
