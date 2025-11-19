@@ -1,170 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mark Brzozowski - Resume</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background-color: #f4f4f4;
-        }
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            background: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            color: #0056b3;
-            border-bottom: 2px solid #0056b3;
-            padding-bottom: 5px;
-        }
-        h1 {
-            font-size: 2em;
-        }
-        .contact-info {
-            margin-bottom: 20px;
-        }
-        .contact-info p {
-            margin: 5px 0;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        .skills-list, .languages-list {
-            list-style-type: none;
-            padding: 0;
-        }
-        .skills-list li, .languages-list li {
-            background: #0056b3;
-            color: #fff;
-            display: inline-block;
-            padding: 5px 10px;
-            margin: 5px;
-            border-radius: 5px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brahzoo.com | Mark Brzozowski Resume</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://storage.googleapis.com/pin_the_place/SVG/pinLogo.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <link href="./dist/output.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <style>
+    body {
+      background: #111827; /* gray-900 */
+      color: #d1d5db;      /* gray-300 */
+      font-family: 'Inter', system-ui, sans-serif;
+    }
+
+    .title-font {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .subtitle-font {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .gradient-text {
+      background-image: linear-gradient(to right, #c084fc, #a855f7);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .section-title {
+      border-bottom: 2px solid #6b21a8; /* purple-700 */
+      padding-bottom: 4px;
+      margin-bottom: 1rem;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      color: #a855f7; /* purple-500 */
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: #c084fc; /* purple-400 */
+    }
+  </style>
 </head>
-<body>
-    <div class="container">
-        <h1>Mark Brzozowski</h1>
-        <div class="contact-info">
-            <p>Email: <a href="mailto:mark.brzozowski@gmail.com">mark.brzozowski@gmail.com</a></p>
-            <p>Phone: +1 514-827-9982</p>
-            <p>Location: Montreal, QC</p>
-        </div>
+<body class="min-h-screen flex flex-col">
 
-        <div class="section">
-            <h2>Professional Summary</h2>
-            <p>Senior Software Quality Assurance Analyst with over 18 years of experience in software testing, team leadership, and framework development. Proficient in multiple programming languages and testing tools, with a proven track record of delivering high-quality software products. Experienced in both manual and automated testing, with a strong background in building and leading QA teams.</p>
-        </div>
+  <!-- HEADER -->
+  <header class="w-full p-5 sticky top-0 bg-gray-950/60 backdrop-blur-md shadow-lg z-10">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between">
 
-        <div class="section">
-            <h2>Professional Experience</h2>
-            <h3>Microsoft</h3>
-            <p><strong>Senior Software Quality Assurance Analyst</strong> | August 2023 – September 2024</p>
-            <ul>
-                <li>Lead QA efforts on a Voice Biometric Conversation Conductor project, conducting cloud tests using Azure DevOps setup.</li>
-                <li>Worked on Nuance Console, a log aggregator, ensuring accurate data collection and system reliability.</li>
-                <li>Built and maintained automated testing frameworks using Playwright Cucumber for UI testing in a pre-production environment.</li>
-                <li>Developed Python scripts for backend data validation, comparing various file formats including Excel, CSV, and PDFs.</li>
-                <li>Acted as a Scrum Master, leading team meetings and ensuring adherence to Agile methodologies.</li>
-                <li>Acted as a developer for several months, coding in C# and Java to support various projects.</li>
-            </ul>
-            <h4>Notable Projects</h4>
-            <ul>
-            <li><strong>Voice Biometric Conversation Conductor:</strong> QA lead on a voice biometric project with extensive cloud testing using ADO.</li>
-            <li><strong>Nuance Console:</strong> Worked on a log aggregator tool, focusing on data accuracy and system reliability.</li>
-            </ul>
-            <br/><br/>
-            <h3>Nuance Communications</h3>
-            <p><strong>Senior Software Quality Assurance Analyst</strong> | May 2006 – August 2023</p>
-            <ul>
-                <li>Played a key role in the development and testing of SpeechAttendant, an automated receptionist utilizing advanced speech recognition.</li>
-                <li>Ran performance tests for 72 hours, while monitoring system resources using various different tools from JMeter, Locust and in-house tools</li>
-                <li>Contributed to the creation of WebAPI Messenger, enabling bot development for platforms like Facebook, Google Home, and Alexa via REST API.</li>
-                <li>Led QA teams in the development and execution of test plans, ensuring software met stringent quality standards.</li>
-                <li>Built custom testing frameworks from scratch, integrating tools like Cucumber, Playwright, and REST API testing.</li>
-                <li>Selenium based automation with CI/CD pipeline</li>
-            </ul>
-            <h4>Notable Projects</h4>
-            <ul>
-                <li><strong>SpeechAttendant:</strong> Developed and tested an automated speech recognition system for directing callers in large organizations using Telephony platforms or SIP.</li>
-                <li><strong>WebAPI Messenger:</strong> Contributed to the WebAPi development for major products like Facebook, Google Home, and Alexa.</li>
-                <li><strong>Nina Messaging</strong> Testing SDKS on Android and iOS for Nina; an AI-powered virtual assistant that delivers natural, secure, and seamless customer service across web, mobile, SMS, and messaging apps.</li>
-            </ul>
-            
-        </div>
+      <div class="title-font text-3xl font-extrabold tracking-wide gradient-text text-center sm:text-left">
+        Brahzoo.com
+      </div>
 
-        <div class=:section">
-            <h2>Independent Projects</h2>
-            <h3>Pin The Place - <a href="https://pinthe.place">https://pinthe.place</a></h3>
-                <p><strong>August 2025 - Present</strong></p>
-                <p>Built a geography quiz web app, implementing full stack features and database integration.</p>
-                <ul>
-                    <li>Fullstack: Typscript, Node.js Express, Postgres Database
-                    <li>Security: SSL, XSS, SQL Injection, CORS Policy, DOMPurify, Sanitization</li>
-                    <li>SEO (Search Engine Optimization): Meta tags, Open Graph & Twitter Cards, JSON-LD Schema Markup, robots.txt and sitemap.xml</li>
-                </ul>
-            <h3>Rocktillery - <a href="https://brahzoo.itch.io/rocktillery">https://brahzoo.itch.io/rocktillery</a></h3>
-                <p><strong>November 2024 - May 2025</strong></p>
-                <p>Designed AI behaviors, game mechanics, and user experience for a video game using Unreal Engine 5.</p>
-            <ul>
-                <li>Unreal Engine 4/5</li>
-                <li>Blueprint Scripting, Gameplay mechanics</li>
-                <li>AI Behavior Trees</li>
-                <li> Leveraging AI to make spritesheets</li>
-            </ul>
-            
-        </div>
-
-        <div class="section">
-            <h2>Education</h2>
-            <p><strong>Dawson College</strong></p>
-            <p>Diploma of College Studies (DEC) in Computer Science | 2001-2005</p>
-        </div>
-
-        <div class="section">
-            <h2>Skills</h2>
-            <ul class="skills-list">
-                <li>Java</li>
-                <li>C#</li>
-                <li>Python</li>
-                <li>MySQL</li>
-                <li>Docker</li>
-                <li>Kubernetes</li>
-                <li>Playwright</li>
-                <li>Cucumber</li>
-                <li>Bash Scripting</li>
-                <li>JUnit Testing</li>
-                <li>Agile</li>
-                <li>CI/CD</li>
-                <li>REST API</li>
-                <li>Javascript/Typescript</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Languages</h2>
-            <ul class="languages-list">
-                <li>English: Proficient</li>
-                <li>French: Proficient</li>
-                <li>Polish: Conversational</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Volunteer Experience</h2>
-            <h3>Big Brothers Big Sisters of Greater Montreal</h3>
-            <p><strong>Mentor | October 2019 – Present</strong></p>
-            <p>A life-changing initiative. Mentor a child named Samuel twice a month, providing guidance, support, and positive influence.</p>
-        </div>
     </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="flex-grow w-full px-5 sm:px-6 py-14">
+    <div class="max-w-4xl mx-auto">
+
+      <!-- INTRO -->
+      <section class="text-center mb-16">
+        <h1 class="title-font text-5xl sm:text-6xl font-extrabold gradient-text">Mark Brzozowski</h1>
+        <p class="subtitle-font text-gray-400 mt-3 text-lg sm:text-xl">Senior Quality Assurance Analyst</p>
+        <p class="subtitle-font mt-5 text-gray-400 max-w-2xl mx-auto">
+          Senior Software QA Analyst with 18+ years of experience in testing, development, and leadership. Proficient in automation, frameworks, AI systems, and cloud testing.
+        </p>
+        <div class="mt-4 subtitle-font text-gray-400">
+          <p>Email: <a href="mailto:mark.brzozowski@gmail.com">mark.brzozowski@gmail.com</a></p>
+          <p>Phone: +1 514-827-9982</p>
+          <p>Location: Montreal, QC</p>
+        </div>
+      </section>
+
+      <!-- PROFESSIONAL EXPERIENCE -->
+      <section class="mb-16">
+        <h2 class="title-font text-3xl sm:text-4xl font-bold text-purple-300 mb-6 section-title">
+          Professional Experience
+        </h2>
+
+        <!-- Microsoft -->
+        <article class="mb-10 p-6 bg-gray-950/50 backdrop-blur-sm rounded-xl border border-gray-700 hover:border-purple-400 transition">
+          <h3 class="title-font text-2xl font-bold gradient-text">Microsoft</h3>
+          <p class="subtitle-font text-gray-400"><strong>Senior Software QA Analyst</strong> | August 2023 – September 2024</p>
+          <ul class="mt-3 subtitle-font text-gray-400 list-disc list-inside">
+            <li>Lead QA efforts on a Voice Biometric Conversation Conductor project with cloud testing using Azure DevOps.</li>
+            <li>Worked on Nuance Console, a log aggregator ensuring accurate data collection and system reliability.</li>
+            <li>Built and maintained automated testing frameworks using Playwright Cucumber for UI testing.</li>
+            <li>Developed Python scripts for backend data validation (Excel, CSV, PDFs).</li>
+            <li>Acted as Scrum Master, leading meetings and Agile processes.</li>
+            <li>Acted as a developer, coding in C# and Java to support projects.</li>
+          </ul>
+          <h4 class="mt-3 subtitle-font text-purple-300 font-semibold">Notable Projects</h4>
+          <ul class="mt-1 subtitle-font text-gray-400 list-disc list-inside">
+            <li>Voice Biometric Conversation Conductor: QA lead with extensive cloud testing using ADO.</li>
+            <li>Nuance Console: Log aggregator, ensuring data accuracy and system reliability.</li>
+          </ul>
+        </article>
+
+        <!-- Nuance Communications -->
+        <article class="mb-10 p-6 bg-gray-950/50 backdrop-blur-sm rounded-xl border border-gray-700 hover:border-purple-400 transition">
+          <h3 class="title-font text-2xl font-bold gradient-text">Nuance Communications</h3>
+          <p class="subtitle-font text-gray-400"><strong>Senior Software QA Analyst</strong> | May 2006 – August 2023</p>
+          <ul class="mt-3 subtitle-font text-gray-400 list-disc list-inside">
+            <li>Developed and tested SpeechAttendant, an automated speech recognition system for large organizations.</li>
+            <li>Ran 72-hour performance tests using JMeter, Locust, and in-house tools.</li>
+            <li>Contributed to WebAPI Messenger for bots on Facebook, Google Home, and Alexa via REST API.</li>
+            <li>Led QA teams and created test plans ensuring software quality.</li>
+            <li>Built custom testing frameworks with Cucumber, Playwright, and REST API automation.</li>
+            <li>Implemented Selenium-based automation in CI/CD pipelines.</li>
+          </ul>
+          <h4 class="mt-3 subtitle-font text-purple-300 font-semibold">Notable Projects</h4>
+          <ul class="mt-1 subtitle-font text-gray-400 list-disc list-inside">
+            <li>SpeechAttendant: Automated speech recognition system for Telephony/SIP platforms.</li>
+            <li>WebAPI Messenger: Development for Facebook, Google Home, and Alexa bots.</li>
+            <li>Nina Messaging: Testing SDKs for AI virtual assistant on web, mobile, SMS, and apps.</li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- INDEPENDENT PROJECTS -->
+      <section class="mb-16">
+        <h2 class="title-font text-3xl sm:text-4xl font-bold text-purple-300 mb-6 section-title">
+          Independent Projects
+        </h2>
+
+        <article class="mb-10 p-6 bg-gray-950/50 backdrop-blur-sm rounded-xl border border-gray-700 hover:border-purple-400 transition">
+          <h3 class="title-font text-2xl font-bold gradient-text">Pin The Place</h3>
+          <p class="subtitle-font text-gray-400"><strong>August 2025 – Present</strong></p>
+          <p class="subtitle-font text-gray-400">Built a geography quiz web app with full stack features and database integration.</p>
+          <ul class="mt-2 subtitle-font text-gray-400 list-disc list-inside">
+            <li>Fullstack: TypeScript, Node.js Express, Postgres Database</li>
+            <li>Security: SSL, XSS, SQL Injection, CORS Policy, DOMPurify, Sanitization</li>
+            <li>SEO: Meta tags, Open Graph & Twitter Cards, JSON-LD, robots.txt, sitemap.xml</li>
+          </ul>
+          <a href="https://pinthe.place" class="mt-4 inline-block text-purple-300 hover:underline">View Project →</a>
+        </article>
+
+        <article class="mb-10 p-6 bg-gray-950/50 backdrop-blur-sm rounded-xl border border-gray-700 hover:border-purple-400 transition">
+          <h3 class="title-font text-2xl font-bold gradient-text">Rocktillery</h3>
+          <p class="subtitle-font text-gray-400"><strong>November 2024 – May 2025</strong></p>
+          <p class="subtitle-font text-gray-400">Designed AI behaviors, gameplay mechanics, and user experience in Unreal Engine 5.</p>
+          <ul class="mt-2 subtitle-font text-gray-400 list-disc list-inside">
+            <li>Unreal Engine 4/5</li>
+            <li>Blueprint Scripting, Gameplay Mechanics</li>
+            <li>AI Behavior Trees</li>
+            <li>Leveraging AI to create spritesheets</li>
+          </ul>
+          <a href="https://brahzoo.itch.io/rocktillery" class="mt-4 inline-block text-purple-300 hover:underline">View Project →</a>
+        </article>
+      </section>
+
+      <!-- EDUCATION -->
+      <section class="mb-16">
+        <h2 class="title-font text-3xl sm:text-4xl font-bold text-purple-300 mb-6 section-title">Education</h2>
+        <p class="subtitle-font text-gray-400"><strong>Dawson College</strong></p>
+        <p class="subtitle-font text-gray-400">Diploma of College Studies (DEC) in Computer Science | 2001 – 2005</p>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="mb-16">
+        <h2 class="title-font text-3xl sm:text-4xl font-bold text-purple-300 mb-6 section-title">Skills</h2>
+        <ul class="flex flex-wrap gap-2">
+          <li class="bg-purple-700 text-white px-3 py-1 rounded">Java</li>
+          <li class="bg-purple-700 text-white px-3 py-1 rounded">C#</li>
+          <li class="bg-purple-700 text-white px-3 py-1 rounded">Python</li>
+          <li class="bg-purple-700 text-white px-3 py-1 rounded">MySQL</li>
+          <li class="bg-purple-700 text-white px-3 py-1 rounded">Docker</li>
+          <li class="bg-purple-700 text-white px-3 py-1 rounded">Kubernetes</li>
+          <li class="bg-purple-700 text-white px-3 py-1 rounded">Playwright</li>
+          <li class="bg-purple-700 text-white px-3 py-1 rounded">Cucumber</li>
+          <li class="bg-purple-700 text-white px-3 py-1 rounded">Bash Scripting</li>
+          <li class="bg-purple-700 text-white px-3 py-1 rounded">JUnit Testing</li>
+          <li class="bg-purple-700 text-white px-3 py-1 rounded">Agile</li>
+          <li class="bg-purple-700 text-white px-3 py-1 rounded">CI/CD</li>
+          <li class="bg-purple-700 text-white px-3 py-1 rounded">REST API</li>
+          <li class="bg-purple-700 text-white px-3 py-1 rounded">Javascript/Typescript</li>
+        </ul>
+      </section>
+
+      <!-- LANGUAGES -->
+      <section class="mb-16">
+        <h2 class="title-font text-3xl sm:text-4xl font-bold text-purple-300 mb-6 section-title">Languages</h2>
+        <ul class="flex flex-wrap gap-2">
+          <li class="bg-purple-700 text-white px-3 py-1 rounded">English: Proficient</li>
+          <li class="bg-purple-700 text-white px-3 py-1 rounded">French: Proficient</li>
+          <li class="bg-purple-700 text-white px-3 py-1 rounded">Polish: Conversational</li>
+        </ul>
+      </section>
+
+      <!-- VOLUNTEER EXPERIENCE -->
+      <section class="mb-16">
+        <h2 class="title-font text-3xl sm:text-4xl font-bold text-purple-300 mb-6 section-title">Volunteer Experience</h2>
+        <article class="p-6 bg-gray-950/50 backdrop-blur-sm rounded-xl border border-gray-700 hover:border-purple-400 transition">
+          <h3 class="title-font text-2xl font-bold gradient-text">Big Brothers Big Sisters of Greater Montreal</h3>
+          <p class="subtitle-font text-gray-400"><strong>Mentor | October 2019 – Present</strong></p>
+          <p class="subtitle-font text-gray-400">Mentor a child named Samuel twice a month, providing guidance, support, and positive influence.</p>
+        </article>
+      </section>
+
+    </div>
+  </main>
+
 </body>
 </html>
