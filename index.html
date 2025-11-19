@@ -3,137 +3,180 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Resume</title>
+<title>Mark Brzozowski Resume</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
 <style>
   body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
+    font-family: 'Inter', sans-serif;
+    background-color: #111827;
+    color: #d1d5db;
   }
-
-  /* Header with name */
-  .header {
-    text-align: center;
-    padding: 20px 0 10px 0;
-    font-size: 36px;
-    font-weight: bold;
-    color: #4B0082; /* Dark purple */
+  .title-font { font-family: 'Montserrat', sans-serif; }
+  .gradient-text {
+    background-image: linear-gradient(to right, #c084fc, #a855f7);
+    -webkit-background-clip: text;
+    color: transparent;
   }
-
   /* Top border under name */
   .top-border {
-    border-top: 6px solid #800080; /* Thick purple border */
-    margin: 0 40px;
+    border-top: 6px solid #800080; /* thick purple */
+    margin: 0 2rem;
   }
-
-  /* Container for two columns */
-  .container {
-    display: flex;
-    margin: 20px 40px;
+  /* Vertical divider */
+  .divider {
+    border-left: 4px solid #800080; /* vertical purple */
   }
-
-  /* Left column */
-  .left {
-    flex: 1;
-    margin-right: 20px;
-  }
-
-  /* Right column */
-  .right {
-    flex: 2;
-    margin-left: 20px;
-  }
-
-  /* Section headings */
   .section-title {
-    font-weight: bold;
-    margin-bottom: 8px;
-    color: #4B0082; /* Dark purple */
-    font-size: 18px;
+    color: #a855f7; 
+    font-weight: 600;
+    margin-bottom: 0.5rem;
     text-transform: uppercase;
-  }
-
-  /* Section content */
-  .section-content {
-    margin-bottom: 20px;
   }
 </style>
 </head>
-<body>
+<body class="min-h-screen flex flex-col items-center">
 
-  <!-- Name -->
-  <div class="header">Mark Brzozowski</div>
+  <!-- NAME -->
+  <h1 class="title-font text-5xl font-extrabold text-purple-900 mt-10">Mark Brzozowski</h1>
 
-  <!-- Purple top border -->
-  <div class="top-border"></div>
+  <!-- TOP BORDER -->
+  <div class="top-border mt-4 mb-10"></div>
 
-  <!-- Two-column layout -->
-  <div class="container">
+  <!-- TWO-COLUMN LAYOUT -->
+  <div class="max-w-6xl w-full flex flex-col md:flex-row gap-10 px-4 md:px-0">
 
-    <!-- Left Column -->
-    <div class="left">
-      <div class="section">
+    <!-- LEFT COLUMN -->
+    <div class="md:w-1/3 flex flex-col gap-10">
+
+      <!-- CONTACT -->
+      <div>
         <div class="section-title">Contact</div>
-        <div class="section-content">
-          Email: mark@example.com<br>
-          Phone: +1 234 567 890<br>
-          LinkedIn: linkedin.com/in/markbrzozowski
-        </div>
+        <p>Email: <a href="mailto:mark.brzozowski@gmail.com" class="text-purple-400 hover:text-purple-300">mark.brzozowski@gmail.com</a></p>
+        <p>Phone: +1 514-827-9982</p>
+        <p>Location: Montreal, QC</p>
       </div>
 
-      <div class="section">
+      <!-- KEY SKILLS -->
+      <div>
         <div class="section-title">Key Skills</div>
-        <div class="section-content">
-          - Java, C#, Python<br>
-          - SQL, Docker, Kubernetes<br>
-          - Playwright, Cucumber, REST API
-        </div>
+        <ul class="list-disc list-inside">
+          <li>Java</li>
+          <li>C#</li>
+          <li>Python</li>
+          <li>MySQL</li>
+          <li>Docker</li>
+          <li>Kubernetes</li>
+          <li>Playwright</li>
+          <li>Cucumber</li>
+          <li>Bash Scripting</li>
+          <li>JUnit Testing</li>
+          <li>Agile</li>
+          <li>CI/CD</li>
+          <li>REST API</li>
+          <li>JavaScript/TypeScript</li>
+        </ul>
       </div>
 
-      <div class="section">
+      <!-- EDUCATION -->
+      <div>
         <div class="section-title">Education</div>
-        <div class="section-content">
-          DEC in Computer Science, Dawson College
-        </div>
+        <p>Dawson College</p>
+        <p>Diploma of College Studies (DEC) in Computer Science | 2001 – 2005</p>
       </div>
 
-      <div class="section">
+      <!-- LANGUAGES -->
+      <div>
         <div class="section-title">Languages</div>
-        <div class="section-content">
-          English, French, Polish
-        </div>
+        <ul class="list-disc list-inside">
+          <li>English: Proficient</li>
+          <li>French: Proficient</li>
+          <li>Polish: Conversational</li>
+        </ul>
       </div>
+
     </div>
 
-    <!-- Right Column -->
-    <div class="right">
-      <div class="section">
-        <div class="section-title">Work Experience</div>
-        <div class="section-content">
-          <!-- Add your work experience here -->
-          Microsoft - Senior QA Analyst (Aug 2024 – Present)<br>
-          Nuance Communications - QA (May 2006 – Aug 2023)
-        </div>
-      </div>
+    <!-- VERTICAL DIVIDER -->
+    <div class="hidden md:block divider"></div>
 
-      <div class="section">
-        <div class="section-title">Projects</div>
-        <div class="section-content">
-          <!-- Add projects here -->
-          - Voice Biometric Conversation Conductor<br>
-          - WebAPI Messenger Bots
-        </div>
-      </div>
+    <!-- RIGHT COLUMN -->
+    <div class="md:w-2/3 flex flex-col gap-10">
 
-      <div class="section">
-        <div class="section-title">Volunteer</div>
-        <div class="section-content">
-          Big Brothers Big Sisters, mentoring since 2019
+      <!-- PROFESSIONAL EXPERIENCE -->
+      <section>
+        <div class="section-title text-purple-300 text-2xl mb-4">Professional Experience</div>
+
+        <!-- Microsoft -->
+        <div class="p-6 bg-gray-950/50 rounded-xl border border-gray-700 hover:border-purple-400 transition">
+          <h3 class="title-font text-2xl font-bold gradient-text">Microsoft</h3>
+          <p class="text-gray-400"><strong>Senior Software QA Analyst</strong> | August 2023 – September 2024</p>
+          <ul class="list-disc list-inside mt-2 text-gray-400">
+            <li>Lead QA efforts on Voice Biometric Conversation Conductor with cloud testing in Azure DevOps.</li>
+            <li>Worked on Nuance Console, a log aggregator ensuring accurate data collection.</li>
+            <li>Built/maintained automated testing frameworks with Playwright Cucumber.</li>
+            <li>Developed Python scripts for backend data validation.</li>
+            <li>Acted as Scrum Master, leading Agile processes.</li>
+            <li>Acted as developer in C# and Java.</li>
+          </ul>
         </div>
-      </div>
+
+        <!-- Nuance Communications -->
+        <div class="p-6 bg-gray-950/50 rounded-xl border border-gray-700 hover:border-purple-400 transition mt-6">
+          <h3 class="title-font text-2xl font-bold gradient-text">Nuance Communications</h3>
+          <p class="text-gray-400"><strong>Senior Software QA Analyst</strong> | May 2006 – August 2023</p>
+          <ul class="list-disc list-inside mt-2 text-gray-400">
+            <li>Developed and tested SpeechAttendant automated speech recognition system.</li>
+            <li>Performed 72-hour performance tests with JMeter and Locust.</li>
+            <li>Built WebAPI Messenger bots for Facebook, Google Home, Alexa.</li>
+            <li>Led QA teams and created test plans.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- INDEPENDENT PROJECTS -->
+      <section>
+        <div class="section-title text-purple-300 text-2xl mb-4">Independent Projects</div>
+
+        <div class="p-6 bg-gray-950/50 rounded-xl border border-gray-700 hover:border-purple-400 transition">
+          <h3 class="title-font text-2xl font-bold gradient-text">Pin The Place</h3>
+          <p class="text-gray-400"><strong>August 2025 – Present</strong></p>
+          <ul class="list-disc list-inside mt-2 text-gray-400">
+            <li>Fullstack: TypeScript, Node.js Express, Postgres Database</li>
+            <li>Security: SSL, XSS, SQL Injection, CORS Policy, Sanitization</li>
+            <li>SEO: Meta tags, Open Graph & Twitter Cards, JSON-LD, sitemap.xml</li>
+          </ul>
+          <a href="https://pinthe.place" class="text-purple-300 hover:underline mt-2 inline-block">View Project →</a>
+        </div>
+
+        <div class="p-6 bg-gray-950/50 rounded-xl border border-gray-700 hover:border-purple-400 transition mt-6">
+          <h3 class="title-font text-2xl font-bold gradient-text">Rocktillery</h3>
+          <p class="text-gray-400"><strong>November 2024 – May 2025</strong></p>
+          <ul class="list-disc list-inside mt-2 text-gray-400">
+            <li>Unreal Engine 4/5, Blueprint Scripting</li>
+            <li>AI Behavior Trees & Gameplay Mechanics</li>
+            <li>Created AI-driven spritesheets</li>
+          </ul>
+          <a href="https://brahzoo.itch.io/rocktillery" class="text-purple-300 hover:underline mt-2 inline-block">View Project →</a>
+        </div>
+      </section>
+
+      <!-- VOLUNTEER EXPERIENCE -->
+      <section>
+        <div class="section-title text-purple-300 text-2xl mb-4">Volunteer Experience</div>
+        <div class="p-6 bg-gray-950/50 rounded-xl border border-gray-700 hover:border-purple-400 transition">
+          <h3 class="title-font text-2xl font-bold gradient-text">Big Brothers Big Sisters of Greater Montreal</h3>
+          <p class="text-gray-400"><strong>Mentor | October 2019 – Present</strong></p>
+          <p class="text-gray-400">Mentor a child named Samuel twice a month, providing guidance and support.</p>
+        </div>
+      </section>
+
     </div>
-
   </div>
 </body>
 </html>
