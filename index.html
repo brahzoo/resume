@@ -26,6 +26,7 @@
   .top-border { border-top: 6px solid #800080; margin: 0 2rem; }
   .divider { border-left: 4px solid #800080; }
   .section-title { color: #a855f7; font-weight: 600; margin-bottom: 0.5rem; text-transform: uppercase; }
+  .btn-purple { background-color: #6b21a8; padding: 0.6rem 1rem; border-radius: 0.5rem; font-weight: 600; display: inline-block; }
 </style>
 </head>
 <body class="min-h-screen flex flex-col items-center">
@@ -48,6 +49,12 @@
         <p>Email: <a href="mailto:mark.brzozowski@gmail.com" class="text-purple-400 hover:text-purple-300">mark.brzozowski@gmail.com</a></p>
         <p>Phone: +1 514-827-9982</p>
         <p>Location: Montreal, QC</p>
+
+        <!-- BUTTONS ADDED UNDER CONTACT (Desktop) -->
+        <div class="flex flex-col gap-3 mt-4">
+          <a href="https://brahzoo.com" class="btn-purple text-center text-white">View Portfolio</a>
+          <a href="MarkBrzozowski.pdf" class="btn-purple text-center text-white">Download PDF</a>
+        </div>
       </div>
 
       <!-- KEY SKILLS -->
@@ -67,7 +74,7 @@
           <li>Agile</li>
           <li>CI/CD</li>
           <li>REST API</li>
-          <li>JavaScript/TypeScript</li>
+          <li>Javascript/Typescript</li>
         </ul>
       </div>
 
@@ -105,13 +112,13 @@
           <p>Phone: +1 514-827-9982</p>
           <p>Location: Montreal, QC</p>
         </div>
-        <!-- Portfolio Link -->
+        <!-- Portfolio Button -->
         <div>
-          <a href="https://brahzoo" class="text-purple-300 hover:underline">Portfolio → Brahzoo</a>
+          <a href="https://brahzoo.com" class="btn-purple text-white inline-block text-center">View Portfolio</a>
         </div>
         <!-- Download PDF -->
         <div>
-          <a href="#" class="px-4 py-2 bg-purple-700 text-white rounded hover:bg-purple-600">Download PDF</a>
+          <a href="MarkBrzozowski.pdf" class="btn-purple text-white inline-block text-center">Download Resume</a>
         </div>
       </div>
 
@@ -122,26 +129,39 @@
         <!-- Microsoft -->
         <div class="p-6 bg-gray-950/50 rounded-xl border border-gray-700 hover:border-purple-400 transition">
           <h3 class="title-font text-2xl font-bold gradient-text">Microsoft</h3>
-          <p class="text-gray-400"><strong>Senior Software QA Analyst</strong> | August 2023 – September 2024</p>
+          <p class="subtitle-font text-gray-400"><strong>Senior Software QA Analyst</strong> | August 2023 – September 2024</p>
           <ul class="list-disc list-inside mt-2 text-gray-400">
-            <li>Lead QA efforts on Voice Biometric Conversation Conductor with cloud testing in Azure DevOps.</li>
-            <li>Worked on Nuance Console, a log aggregator ensuring accurate data collection.</li>
-            <li>Built/maintained automated testing frameworks with Playwright Cucumber.</li>
-            <li>Developed Python scripts for backend data validation.</li>
-            <li>Acted as Scrum Master, leading Agile processes.</li>
-            <li>Acted as developer in C# and Java.</li>
+            <li>Lead QA efforts on a Voice Biometric Conversation Conductor project with cloud testing using Azure DevOps.</li>
+            <li>Worked on Nuance Console, a log aggregator ensuring accurate data collection and system reliability.</li>
+            <li>Built and maintained automated testing frameworks using Playwright Cucumber for UI testing.</li>
+            <li>Developed Python scripts for backend data validation (Excel, CSV, PDFs).</li>
+            <li>Acted as Scrum Master, leading meetings and Agile processes.</li>
+            <li>Acted as a developer, coding in C# and Java to support projects.</li>
+          </ul>
+          <h4 class="mt-3 subtitle-font text-purple-300 font-semibold">Notable Projects</h4>
+          <ul class="mt-1 subtitle-font text-gray-400 list-disc list-inside">
+            <li>Voice Biometric Conversation Conductor: QA lead with extensive cloud testing using ADO.</li>
+            <li>Nuance Console: Log aggregator, ensuring data accuracy and system reliability.</li>
           </ul>
         </div>
 
         <!-- Nuance Communications -->
         <div class="p-6 bg-gray-950/50 rounded-xl border border-gray-700 hover:border-purple-400 transition mt-6">
           <h3 class="title-font text-2xl font-bold gradient-text">Nuance Communications</h3>
-          <p class="text-gray-400"><strong>Senior Software QA Analyst</strong> | May 2006 – August 2023</p>
+          <p class="subtitle-font text-gray-400"><strong>Senior Software QA Analyst</strong> | May 2006 – August 2023</p>
           <ul class="list-disc list-inside mt-2 text-gray-400">
-            <li>Developed and tested SpeechAttendant automated speech recognition system.</li>
-            <li>Performed 72-hour performance tests with JMeter and Locust.</li>
-            <li>Built WebAPI Messenger bots for Facebook, Google Home, Alexa.</li>
-            <li>Led QA teams and created test plans.</li>
+            <li>Developed and tested SpeechAttendant, an automated speech recognition system for large organizations.</li>
+            <li>Ran 72-hour performance tests using JMeter, Locust, and in-house tools.</li>
+            <li>Contributed to WebAPI Messenger for bots on Facebook, Google Home, and Alexa via REST API.</li>
+            <li>Led QA teams and created test plans ensuring software quality.</li>
+            <li>Built custom testing frameworks with Cucumber, Playwright, and REST API automation.</li>
+            <li>Implemented Selenium-based automation in CI/CD pipelines.</li>
+          </ul>
+          <h4 class="mt-3 subtitle-font text-purple-300 font-semibold">Notable Projects</h4>
+          <ul class="mt-1 subtitle-font text-gray-400 list-disc list-inside">
+            <li>SpeechAttendant: Automated speech recognition system for Telephony/SIP platforms.</li>
+            <li>WebAPI Messenger: Development for Facebook, Google Home, and Alexa bots.</li>
+            <li>Nina Messaging: Testing SDKs for AI virtual assistant on web, mobile, SMS, and apps.</li>
           </ul>
         </div>
       </section>
@@ -152,24 +172,27 @@
 
         <div class="p-6 bg-gray-950/50 rounded-xl border border-gray-700 hover:border-purple-400 transition">
           <h3 class="title-font text-2xl font-bold gradient-text">Pin The Place</h3>
-          <p class="text-gray-400"><strong>August 2025 – Present</strong></p>
+          <p class="subtitle-font text-gray-400"><strong>August 2025 – Present</strong></p>
+          <p class="subtitle-font text-gray-400">Built a geography quiz web app with full stack features and database integration.</p>
           <ul class="list-disc list-inside mt-2 text-gray-400">
             <li>Fullstack: TypeScript, Node.js Express, Postgres Database</li>
-            <li>Security: SSL, XSS, SQL Injection, CORS Policy, Sanitization</li>
-            <li>SEO: Meta tags, Open Graph & Twitter Cards, JSON-LD, sitemap.xml</li>
+            <li>Security: SSL, XSS, SQL Injection, CORS Policy, DOMPurify, Sanitization</li>
+            <li>SEO: Meta tags, Open Graph & Twitter Cards, JSON-LD, robots.txt, sitemap.xml</li>
           </ul>
-          <a href="https://pinthe.place" class="text-purple-300 hover:underline mt-2 inline-block">View Project →</a>
+          <a href="https://pinthe.place" class="mt-4 inline-block text-purple-300 hover:underline">View Project →</a>
         </div>
 
         <div class="p-6 bg-gray-950/50 rounded-xl border border-gray-700 hover:border-purple-400 transition mt-6">
           <h3 class="title-font text-2xl font-bold gradient-text">Rocktillery</h3>
-          <p class="text-gray-400"><strong>November 2024 – May 2025</strong></p>
+          <p class="subtitle-font text-gray-400"><strong>November 2024 – May 2025</strong></p>
+          <p class="subtitle-font text-gray-400">Designed AI behaviors, gameplay mechanics, and user experience in Unreal Engine 5.</p>
           <ul class="list-disc list-inside mt-2 text-gray-400">
-            <li>Unreal Engine 4/5, Blueprint Scripting</li>
-            <li>AI Behavior Trees & Gameplay Mechanics</li>
-            <li>Created AI-driven spritesheets</li>
+            <li>Unreal Engine 4/5</li>
+            <li>Blueprint Scripting, Gameplay Mechanics</li>
+            <li>AI Behavior Trees</li>
+            <li>Leveraging AI to create spritesheets</li>
           </ul>
-          <a href="https://brahzoo.itch.io/rocktillery" class="text-purple-300 hover:underline mt-2 inline-block">View Project →</a>
+          <a href="https://brahzoo.itch.io/rocktillery" class="mt-4 inline-block text-purple-300 hover:underline">View Project →</a>
         </div>
       </section>
 
@@ -178,8 +201,8 @@
         <div class="section-title text-purple-300 text-2xl mb-4">Volunteer Experience</div>
         <div class="p-6 bg-gray-950/50 rounded-xl border border-gray-700 hover:border-purple-400 transition">
           <h3 class="title-font text-2xl font-bold gradient-text">Big Brothers Big Sisters of Greater Montreal</h3>
-          <p class="text-gray-400"><strong>Mentor | October 2019 – Present</strong></p>
-          <p class="text-gray-400">Mentor a child named Samuel twice a month, providing guidance and support.</p>
+          <p class="subtitle-font text-gray-400"><strong>Mentor | October 2019 – Present</strong></p>
+          <p class="subtitle-font text-gray-400">Mentor a child named Samuel twice a month, providing guidance, support, and positive influence.</p>
         </div>
       </section>
 
@@ -203,7 +226,7 @@
             <li>Agile</li>
             <li>CI/CD</li>
             <li>REST API</li>
-            <li>JavaScript/TypeScript</li>
+            <li>Javascript/Typescript</li>
           </ul>
         </div>
 
