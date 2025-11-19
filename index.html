@@ -1,170 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mark Brzozowski - Resume</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background-color: #f4f4f4;
-        }
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            background: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            color: #0056b3;
-            border-bottom: 2px solid #0056b3;
-            padding-bottom: 5px;
-        }
-        h1 {
-            font-size: 2em;
-        }
-        .contact-info {
-            margin-bottom: 20px;
-        }
-        .contact-info p {
-            margin: 5px 0;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        .skills-list, .languages-list {
-            list-style-type: none;
-            padding: 0;
-        }
-        .skills-list li, .languages-list li {
-            background: #0056b3;
-            color: #fff;
-            display: inline-block;
-            padding: 5px 10px;
-            margin: 5px;
-            border-radius: 5px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+
+  /* Header with name */
+  .header {
+    text-align: center;
+    padding: 20px 0 10px 0;
+    font-size: 36px;
+    font-weight: bold;
+    color: #4B0082; /* Dark purple */
+  }
+
+  /* Top border under name */
+  .top-border {
+    border-top: 6px solid #800080; /* Thick purple border */
+    margin: 0 40px;
+  }
+
+  /* Container for two columns */
+  .container {
+    display: flex;
+    margin: 20px 40px;
+  }
+
+  /* Left column */
+  .left {
+    flex: 1;
+    margin-right: 20px;
+  }
+
+  /* Right column */
+  .right {
+    flex: 2;
+    margin-left: 20px;
+  }
+
+  /* Section headings */
+  .section-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #4B0082; /* Dark purple */
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  /* Section content */
+  .section-content {
+    margin-bottom: 20px;
+  }
+</style>
 </head>
 <body>
-    <div class="container">
-        <h1>Mark Brzozowski</h1>
-        <div class="contact-info">
-            <p>Email: <a href="mailto:mark.brzozowski@gmail.com">mark.brzozowski@gmail.com</a></p>
-            <p>Phone: +1 514-827-9982</p>
-            <p>Location: Montreal, QC</p>
-        </div>
 
-        <div class="section">
-            <h2>Professional Summary</h2>
-            <p>Senior Software Quality Assurance Analyst with over 18 years of experience in software testing, team leadership, and framework development. Proficient in multiple programming languages and testing tools, with a proven track record of delivering high-quality software products. Experienced in both manual and automated testing, with a strong background in building and leading QA teams.</p>
-        </div>
+  <!-- Name -->
+  <div class="header">Mark Brzozowski</div>
 
-        <div class="section">
-            <h2>Professional Experience</h2>
-            <h3>Microsoft</h3>
-            <p><strong>Senior Software Quality Assurance Analyst</strong> | August 2023 – September 2024</p>
-            <ul>
-                <li>Lead QA efforts on a Voice Biometric Conversation Conductor project, conducting cloud tests using Azure DevOps setup.</li>
-                <li>Worked on Nuance Console, a log aggregator, ensuring accurate data collection and system reliability.</li>
-                <li>Built and maintained automated testing frameworks using Playwright Cucumber for UI testing in a pre-production environment.</li>
-                <li>Developed Python scripts for backend data validation, comparing various file formats including Excel, CSV, and PDFs.</li>
-                <li>Acted as a Scrum Master, leading team meetings and ensuring adherence to Agile methodologies.</li>
-                <li>Acted as a developer for several months, coding in C# and Java to support various projects.</li>
-            </ul>
-            <h4>Notable Projects</h4>
-            <ul>
-            <li><strong>Voice Biometric Conversation Conductor:</strong> QA lead on a voice biometric project with extensive cloud testing using ADO.</li>
-            <li><strong>Nuance Console:</strong> Worked on a log aggregator tool, focusing on data accuracy and system reliability.</li>
-            </ul>
-            <br/><br/>
-            <h3>Nuance Communications</h3>
-            <p><strong>Senior Software Quality Assurance Analyst</strong> | May 2006 – August 2023</p>
-            <ul>
-                <li>Played a key role in the development and testing of SpeechAttendant, an automated receptionist utilizing advanced speech recognition.</li>
-                <li>Ran performance tests for 72 hours, while monitoring system resources using various different tools from JMeter, Locust and in-house tools</li>
-                <li>Contributed to the creation of WebAPI Messenger, enabling bot development for platforms like Facebook, Google Home, and Alexa via REST API.</li>
-                <li>Led QA teams in the development and execution of test plans, ensuring software met stringent quality standards.</li>
-                <li>Built custom testing frameworks from scratch, integrating tools like Cucumber, Playwright, and REST API testing.</li>
-                <li>Selenium based automation with CI/CD pipeline</li>
-            </ul>
-            <h4>Notable Projects</h4>
-            <ul>
-                <li><strong>SpeechAttendant:</strong> Developed and tested an automated speech recognition system for directing callers in large organizations using Telephony platforms or SIP.</li>
-                <li><strong>WebAPI Messenger:</strong> Contributed to the WebAPi development for major products like Facebook, Google Home, and Alexa.</li>
-                <li><strong>Nina Messaging</strong> Testing SDKS on Android and iOS for Nina; an AI-powered virtual assistant that delivers natural, secure, and seamless customer service across web, mobile, SMS, and messaging apps.</li>
-            </ul>
-            
-        </div>
+  <!-- Purple top border -->
+  <div class="top-border"></div>
 
-        <div class=:section">
-            <h2>Independent Projects</h2>
-            <h3>Pin The Place - <a href="https://pinthe.place">https://pinthe.place</a></h3>
-                <p><strong>August 2025 - Present</strong></p>
-                <p>Built a geography quiz web app, implementing full stack features and database integration.</p>
-                <ul>
-                    <li>Fullstack: Typscript, Node.js Express, Postgres Database
-                    <li>Security: SSL, XSS, SQL Injection, CORS Policy, DOMPurify, Sanitization</li>
-                    <li>SEO (Search Engine Optimization): Meta tags, Open Graph & Twitter Cards, JSON-LD Schema Markup, robots.txt and sitemap.xml</li>
-                </ul>
-            <h3>Rocktillery - <a href="https://brahzoo.itch.io/rocktillery">https://brahzoo.itch.io/rocktillery</a></h3>
-                <p><strong>November 2024 - May 2025</strong></p>
-                <p>Designed AI behaviors, game mechanics, and user experience for a video game using Unreal Engine 5.</p>
-            <ul>
-                <li>Unreal Engine 4/5</li>
-                <li>Blueprint Scripting, Gameplay mechanics</li>
-                <li>AI Behavior Trees</li>
-                <li> Leveraging AI to make spritesheets</li>
-            </ul>
-            
-        </div>
+  <!-- Two-column layout -->
+  <div class="container">
 
-        <div class="section">
-            <h2>Education</h2>
-            <p><strong>Dawson College</strong></p>
-            <p>Diploma of College Studies (DEC) in Computer Science | 2001-2005</p>
+    <!-- Left Column -->
+    <div class="left">
+      <div class="section">
+        <div class="section-title">Contact</div>
+        <div class="section-content">
+          Email: mark@example.com<br>
+          Phone: +1 234 567 890<br>
+          LinkedIn: linkedin.com/in/markbrzozowski
         </div>
+      </div>
 
-        <div class="section">
-            <h2>Skills</h2>
-            <ul class="skills-list">
-                <li>Java</li>
-                <li>C#</li>
-                <li>Python</li>
-                <li>MySQL</li>
-                <li>Docker</li>
-                <li>Kubernetes</li>
-                <li>Playwright</li>
-                <li>Cucumber</li>
-                <li>Bash Scripting</li>
-                <li>JUnit Testing</li>
-                <li>Agile</li>
-                <li>CI/CD</li>
-                <li>REST API</li>
-                <li>Javascript/Typescript</li>
-            </ul>
+      <div class="section">
+        <div class="section-title">Key Skills</div>
+        <div class="section-content">
+          - Java, C#, Python<br>
+          - SQL, Docker, Kubernetes<br>
+          - Playwright, Cucumber, REST API
         </div>
+      </div>
 
-        <div class="section">
-            <h2>Languages</h2>
-            <ul class="languages-list">
-                <li>English: Proficient</li>
-                <li>French: Proficient</li>
-                <li>Polish: Conversational</li>
-            </ul>
+      <div class="section">
+        <div class="section-title">Education</div>
+        <div class="section-content">
+          DEC in Computer Science, Dawson College
         </div>
+      </div>
 
-        <div class="section">
-            <h2>Volunteer Experience</h2>
-            <h3>Big Brothers Big Sisters of Greater Montreal</h3>
-            <p><strong>Mentor | October 2019 – Present</strong></p>
-            <p>A life-changing initiative. Mentor a child named Samuel twice a month, providing guidance, support, and positive influence.</p>
+      <div class="section">
+        <div class="section-title">Languages</div>
+        <div class="section-content">
+          English, French, Polish
         </div>
+      </div>
     </div>
+
+    <!-- Right Column -->
+    <div class="right">
+      <div class="section">
+        <div class="section-title">Work Experience</div>
+        <div class="section-content">
+          <!-- Add your work experience here -->
+          Microsoft - Senior QA Analyst (Aug 2024 – Present)<br>
+          Nuance Communications - QA (May 2006 – Aug 2023)
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Projects</div>
+        <div class="section-content">
+          <!-- Add projects here -->
+          - Voice Biometric Conversation Conductor<br>
+          - WebAPI Messenger Bots
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Volunteer</div>
+        <div class="section-content">
+          Big Brothers Big Sisters, mentoring since 2019
+        </div>
+      </div>
+    </div>
+
+  </div>
 </body>
 </html>
